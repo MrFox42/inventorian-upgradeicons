@@ -1,0 +1,10 @@
+## Interface: 80200
+## Title: Inventorian |r|cff69ccf0Upgrade Icons|r
+## Author: MrFox (Gyula Pataki)
+## Notes: Shows upgrade icons on items in your inventory
+## Version: 8.2.0
+## Dependencies: Inventorian
+## X-Category: Inventory
+## X-License: GNU General Public License Version 3
+
+Inventorian-UpgradeIcons.lua
