@@ -1,4 +1,4 @@
-required-dependencies
+required-dependencies:
     - Inventorian
 
 optional-dependencies:
