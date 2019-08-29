@@ -1,0 +1,9 @@
+required-dependencies
+    - Inventorian
+
+optional-dependencies:
+    - Pawn
+
+manual-changelog:
+    filename: CHANGELOG.md
+    markup-type: markdown
