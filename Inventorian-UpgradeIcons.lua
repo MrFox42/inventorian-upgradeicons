@@ -1,14 +1,17 @@
 local Addon = LibStub("AceAddon-3.0"):GetAddon("Inventorian")
 local Update = Addon.Item.prototype.Update
 
-Addon.Item.prototype.IsUpgrade = function(self, ...)
+Addon.Item.prototype.IsUpgrade = function(self)
     return IsContainerItemAnUpgrade(self:GetBag(), self:GetID())
 end
 
-Addon.Item.prototype.UpdateUpgradeIcon = function(self, ...)
+Addon.Item.prototype.UpdateUpgradeIcon = function(self)
+    local context = self;
     local isUpgrade = self:IsUpgrade()
     if isUpgrade == nil then
-        self:After(0.5, 'UpdateUpgradeIcon')
+        C_Timer.After(0.5, function ()
+            Addon.Item.prototype.UpdateUpgradeIcon(context)
+        end)
     else
         self.UpgradeIcon:SetShown(isUpgrade)
     end
