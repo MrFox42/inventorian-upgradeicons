@@ -1,6 +1,5 @@
 # Inventorian Upgrade Icons
 
-
 This plugin displays the green upgrade icons on items in your bag, when using [Inventorian](https://www.curseforge.com/wow/addons/inventorian).
 
 **You don't need this if you have the [item levels](https://www.curseforge.com/wow/addons/inventorian-itemlevels) plugin.**
